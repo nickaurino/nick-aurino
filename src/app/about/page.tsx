@@ -5,6 +5,7 @@ import { TechStack } from "@/components/about/TechStack"
 import { Experience } from "@/components/about/Experience"
 import { Education } from "@/components/about/Education"
 import { BeyondCode } from "@/components/about/BeyondCode"
+import Terminal from "@/components/about/Terminal"
 
 export const metadata = {
   title: "About | Nick Aurino",
@@ -69,6 +70,15 @@ export default function AboutPage() {
       <div className="animate-fade-in-up animate-delay-4 mt-16">
         <BeyondCode />
       </div>
+
+      {/* Terminal */}
+      <div className="animate-fade-in-up animate-delay-4 mt-16">
+        <div className="mb-4">
+          <p className="font-mono text-sm text-[var(--color-accent)]">interactive</p>
+          <h2 className="text-2xl font-bold text-[var(--color-text)] mt-1">Try the shell</h2>
+        </div>
+      </div>
+      <Terminal />
 
       {/* Resume CTA */}
       <div className="animate-fade-in-up animate-delay-4 mt-16">

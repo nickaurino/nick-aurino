@@ -49,7 +49,7 @@ export const STATS = [
   { value: 500, suffix: "K+", label: "health videos collected" },
   { value: 157, suffix: "K", label: "benchmark corpus" },
   { value: 3, suffix: "K", label: "expert-annotated samples" },
-  { value: 5, suffix: "", label: "projects shipped" },
+  { value: 7, suffix: "", label: "projects shipped" },
 ]
 
 export const CERTS = [

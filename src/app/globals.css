@@ -86,6 +86,13 @@ body {
   cursor: default;
 }
 
+/* ── Accessibility: keyboard focus rings ─────────────── */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
 /* ── Print styles (for /resume page) ────────────────── */
 @media print {
   body {

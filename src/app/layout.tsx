@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
+import ConsoleMessage from "@/components/ConsoleMessage";
+import KonamiEgg from "@/components/KonamiEgg";
 import { SITE } from "@/lib/constants";
 import "./globals.css";
 
@@ -46,6 +48,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
       <body className="min-h-screen antialiased">
+        <ConsoleMessage />
+        <KonamiEgg />
         <Nav />
         <main>{children}</main>
         <Footer />

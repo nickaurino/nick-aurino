@@ -87,7 +87,7 @@ function runCommand(input: string): string[] {
 
 export default function Terminal() {
   const [lines, setLines] = useState<Line[]>([
-    { type: "output", text: "Welcome to nick's shell. Type 'help' to get started." },
+    { type: "output", text: "Welcome to Nick's shell. Type 'help' to get started." },
   ])
   const [input, setInput] = useState("")
   const [history, setHistory] = useState<string[]>([])

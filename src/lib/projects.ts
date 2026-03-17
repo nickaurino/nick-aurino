@@ -68,9 +68,9 @@ export const PROJECTS: Project[] = [
   },
   {
     title: "JesuitApp",
-    tagline: "A mobile community app for the Jesuit House at LMU, still in daily use.",
+    tagline: "An ongoing mobile community app for the Jesuit House at LMU.",
     description:
-      "Built the frontend for a mobile app serving the Jesuit House community at LMU, partnering with Isaiah Pajarillo who handled the backend. Features include absence submissions, guest management, photo uploads, and Mass schedule editing, with an admin panel for community staff. Built with React Native and Expo, with Firebase handling auth, file storage, and real-time data. Demoed to Fr. Eddie Siebert, S.J. and still in use today.",
+      "Built the frontend for a mobile app serving the Jesuit House community at LMU, partnering with Isaiah Pajarillo who handled the backend. Features include absence submissions, guest management, photo uploads, and Mass schedule editing, with an admin panel for community staff. Built with React Native and Expo, with Firebase handling auth, file storage, and real-time data. Demoed to Fr. Eddie Siebert, S.J. and actively used by the community today.",
     tags: ["React Native", "Expo", "Firebase", "Mobile"],
     year: "2024",
     status: "completed",

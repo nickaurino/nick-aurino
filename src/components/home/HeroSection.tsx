@@ -10,8 +10,9 @@ import { SITE } from "@/lib/constants";
 const ITEMS = [
   { text: "",                    pause: 6500  }, // long blank at start + between cycles
   { text: "a software engineer", pause: 2400  },
-  { text: "a full-stack dev",    pause: 2400  },
+  { text: "an AI developer",     pause: 2400  },
   { text: "a builder",           pause: 2400  },
+  { text: "a problem solver",    pause: 2400  },
   { text: "a cs student",        pause: 2400  },
 ];
 

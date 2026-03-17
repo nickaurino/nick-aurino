@@ -8,7 +8,7 @@ import { SITE } from "@/lib/constants";
 // Item 0 is the long blank — first thing you see, and the rest between full cycles.
 // Short blanks between individual roles come from the 1.2s gap in the else branch.
 const ITEMS = [
-  { text: "",                    pause: 12000 }, // long blank at start + between cycles
+  { text: "",                    pause: 6500  }, // long blank at start + between cycles
   { text: "a software engineer", pause: 2400  },
   { text: "a full-stack dev",    pause: 2400  },
   { text: "a builder",           pause: 2400  },
@@ -116,7 +116,7 @@ export function HeroSection() {
       {/* Content */}
       <div className="relative z-10 mx-auto w-full max-w-5xl">
         <p className="animate-fade-in mb-4 font-mono text-sm text-[var(--color-accent)]">
-          hi, I&apos;m{displayed ? " " : ""}
+          hi, i&apos;m{displayed ? " " : ""}
           <span>{displayed}</span>
           <span className="animate-blink inline-block">|</span>
         </p>

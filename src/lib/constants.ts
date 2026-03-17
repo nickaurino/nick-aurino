@@ -5,8 +5,8 @@ export const SITE = {
     "Generalist software engineer. I build things across the stack and share what I learn along the way.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://nickaurino.dev",
   github: "https://github.com/nickaurino",
-  linkedin: "https://linkedin.com/in/nickaurino",
-  email: "nick@nickaurino.dev",
+  linkedin: "https://linkedin.com/in/nick-aurino",
+  email: "nickaurino@gmail.com",
 };
 
 export const NAV_LINKS = [

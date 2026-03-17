@@ -18,7 +18,7 @@ export const PROJECTS: Project[] = [
     description:
       "Co-authored and built the data pipeline for M4Health, a 436K-video benchmark spanning TikTok, YouTube Shorts, and Reddit across nutrition, fitness, mental health, and wellness. Designed to stress-test large vision-language models on credibility assessment, AI-generation detection, and theme classification. Ongoing research funded by LMU Undergraduate Research Stipend.",
     tags: ["Python", "Data Pipelines", "Vision-Language Models", "Research", "NLP"],
-    badge: "Submitted · ICWSM 2026",
+    badge: "Submitted · WWW & ICWSM 2026",
     link: { label: "Paper (coming soon)", href: "#" },
     year: "2025",
     featured: true,
@@ -57,12 +57,32 @@ export const PROJECTS: Project[] = [
     status: "completed",
   },
   {
+    title: "Project Skywalker",
+    tagline: "Led avionics for a 2U CubeSat mission carrying an experimental MHD pump payload.",
+    description:
+      "Led avionics development for a 2U CubeSat mission, implementing onboard data acquisition and telemetry systems to support MHD pump experiments in microgravity. Designed data storage and processing pipelines to analyze pump efficiency, flow rate, and power consumption, evaluating viability as a spacecraft fluid management system. Funded by LMU Undergraduate Research Stipend.",
+    tags: ["Python", "Embedded Systems", "Data Pipelines", "Research"],
+    badge: "LMU Research",
+    year: "2024",
+    status: "completed",
+  },
+  {
     title: "JesuitApp",
     tagline: "A mobile community app for the Jesuit House at LMU, still in daily use.",
     description:
       "Built the frontend for a mobile app serving the Jesuit House community at LMU, partnering with Isaiah Pajarillo who handled the backend. Features include absence submissions, guest management, photo uploads, and Mass schedule editing, with an admin panel for community staff. Built with React Native and Expo, with Firebase handling auth, file storage, and real-time data. Demoed to Fr. Eddie Siebert, S.J. and still in use today.",
     tags: ["React Native", "Expo", "Firebase", "Mobile"],
     year: "2024",
+    status: "completed",
+  },
+  {
+    title: "Hearing Aid & Sound Research",
+    tagline: "A two-stage ML pipeline for real-time stress detection using audio and biometric data.",
+    description:
+      "Built a two-stage ML pipeline to classify audio inputs and predict stress-induced heart rate elevation, integrating real-time model inference with Arduino hardware for biofeedback. Collected and preprocessed biometric and audio datasets, extracting acoustic features to train and evaluate classification and regression models for stress-response prediction. Funded by LMU Undergraduate Research Stipend.",
+    tags: ["Python", "Machine Learning", "Arduino", "Signal Processing"],
+    badge: "LMU Research",
+    year: "2023",
     status: "completed",
   },
 ]

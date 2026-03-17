@@ -85,3 +85,27 @@ body {
   animation: glitch 0.5s ease;
   cursor: default;
 }
+
+/* ── Print styles (for /resume page) ────────────────── */
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  nav,
+  footer,
+  .print\:hidden {
+    display: none !important;
+  }
+
+  * {
+    box-shadow: none !important;
+    animation: none !important;
+  }
+
+  /* Lighten borders and muted text for print */
+  [style*="--color-border"] {
+    border-color: #d4d4d8 !important;
+  }
+}

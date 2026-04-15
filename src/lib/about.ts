@@ -1,5 +1,18 @@
 export const EXPERIENCE = [
   {
+    company: "Google Code Next",
+    role: "Machine Learning Instructional Intern",
+    period: "Apr 2026 – Present",
+    location: "Inglewood, CA",
+    description:
+      "Mentoring 20+ student engineers in hands-on ML coding sessions covering JavaScript, Three.js, MediaPipe, and XR technologies, while building an interactive 3D feature to demonstrate core concepts for small-group instruction.",
+    bullets: [
+      "Mentored 20+ student engineers in hands-on coding sessions, supporting debugging, environment setup, and problem-solving skills.",
+      "Guided students through hands-on projects using JavaScript, Three.js, MediaPipe, and XR technologies, providing real-time support on debugging and implementation concepts.",
+      "Building an interactive feature using real-time input and 3D rendering to demonstrate core concepts for small-group student instruction.",
+    ],
+  },
+  {
     company: "CyberActive Inc.",
     role: "Technical Intern",
     period: "May 2025 – Aug 2025",

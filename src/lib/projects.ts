@@ -18,7 +18,7 @@ export const PROJECTS: Project[] = [
     description:
       "Co-authored and built the data pipeline for M4Health, a 500K+-video benchmark spanning TikTok, YouTube Shorts, and Reddit across nutrition, fitness, mental health, and wellness. Designed to stress-test large vision-language models on credibility assessment, AI-generation detection, and theme classification. Ongoing research funded by LMU Undergraduate Research Stipend.",
     tags: ["Python", "Data Pipelines", "Vision-Language Models", "Research", "NLP"],
-    badge: "Submitted · WWW & ICWSM 2026",
+    badge: "Accepted · MisD @ ICWSM 2026",
     link: { label: "Paper (coming soon)", href: "#" },
     year: "2025",
     featured: true,

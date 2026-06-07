@@ -23,13 +23,13 @@ export function AboutHero() {
             Hi, I&apos;m Nick.
           </h2>
           <p className="mb-4 leading-relaxed text-[var(--color-muted)]">
-            I&apos;m a Computer Science student at Loyola Marymount University, graduating in May
-            2026 with a minor in Statistics and Data Science and a second minor in Interactive,
-            Gaming, and Immersive Media.
+            I&apos;m a computer science graduate from Loyola Marymount University, where I also
+            earned minors in Statistics &amp; Data Science and in Interactive, Gaming, and
+            Immersive Media.
           </p>
           <p className="leading-relaxed text-[var(--color-muted)]">
-            I enjoy building things at the intersection of technology and real-world impact, whether
-            that&apos;s published research, mobile apps, or full-stack tools. I&apos;m drawn to
+            These days I build personal software projects inspired by things I wish existed,
+            mostly mobile apps and small tools that scratch my own curiosity. I&apos;m drawn to
             work that blends creativity and structure, and I care about the craft behind whatever
             I&apos;m building.
           </p>
@@ -42,7 +42,7 @@ export function AboutHero() {
             {[
               { label: "School", value: "Loyola Marymount University" },
               { label: "Degree", value: "B.S. Computer Science" },
-              { label: "Graduating", value: "May 2026" },
+              { label: "Graduated", value: "May 2026" },
               { label: "Location", value: "Los Angeles, CA" },
               { label: "Minors", value: "Statistics & Data Science, IGIM" },
             ].map(({ label, value }) => (

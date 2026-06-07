@@ -5,14 +5,17 @@
   --font-sans: var(--font-inter);
   --font-mono: var(--font-jetbrains-mono);
 
-  /* Custom color palette — dark-first design */
-  --color-background: #09090b;     /* zinc-950 */
-  --color-surface: #18181b;        /* zinc-900 */
-  --color-border: #27272a;         /* zinc-800 */
-  --color-text: #fafafa;           /* zinc-50 */
-  --color-muted: #a1a1aa;          /* zinc-400 */
-  --color-accent: #34d399;         /* emerald-400 */
-  --color-accent-hover: #6ee7b7;   /* emerald-300 */
+  /* George Theme — warm walnut palette, dark-first design */
+  --color-background: #1a0f08;     /* George Undercoat */
+  --color-surface: #2e1a0e;        /* George Coat */
+  --color-border: #4a2e18;         /* Walnut Grain */
+  --color-text: #e8ddd0;           /* Bed Light */
+  --color-muted: #8a7060;          /* Bed Dark */
+  --color-accent: #c8b89a;         /* Bed Medium */
+  --color-accent-hover: #d8cbb2;   /* Bed Medium, lifted */
+  --color-accent-dim: #3d2a1a;     /* Dark Walnut */
+  --color-live: #34c759;           /* Live Green — active/current indicator */
+  --color-glow: #5a3a20;           /* Deep walnut — ambient background glow */
 }
 
 body {
@@ -45,12 +48,16 @@ body {
   50%       { opacity: 0; }
 }
 
+/* fill-mode: backwards (not both) — hides the element during the stagger
+   delay on load, but reverts it to its natural, un-transformed state once
+   the animation finishes. Keeps these cards off their own GPU layer at rest,
+   which avoids a flicker where large cards blink out during fast scrolling. */
 .animate-fade-in {
-  animation: fadeIn 0.6s ease both;
+  animation: fadeIn 0.6s ease backwards;
 }
 
 .animate-fade-in-up {
-  animation: fadeInUp 0.6s ease both;
+  animation: fadeInUp 0.6s ease backwards;
 }
 
 .animate-delay-1 { animation-delay: 150ms; }
@@ -60,6 +67,22 @@ body {
 
 .animate-blink {
   animation: blink 1s step-end infinite;
+}
+
+/* ── Modal entrance ──────────────────────────────────── */
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-modal-in {
+  animation: modalIn 0.25s ease both;
 }
 
 @keyframes pulse-glow {

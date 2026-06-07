@@ -2,7 +2,7 @@ export const SITE = {
   name: "Nick Aurino",
   title: "Nick Aurino — Software Engineer",
   description:
-    "Computer science student at LMU who builds things, learns as I go, and tries to turn ideas into something people actually use.",
+    "I'm a computer science graduate from Loyola Marymount University, building personal software projects inspired by things I wish existed.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://nickaurino.dev",
   github: "https://github.com/nickaurino",
   linkedin: "https://linkedin.com/in/nick-aurino",

@@ -70,7 +70,7 @@ export default function KonamiEgg() {
       ctx.fillStyle = "rgba(0,0,0,0.05)"
       ctx.fillRect(0, 0, canvas.width, canvas.height)
 
-      ctx.fillStyle = "#34d399"
+      ctx.fillStyle = "#c8b89a"
       ctx.font = `${fontSize}px 'JetBrains Mono', monospace`
 
       for (let i = 0; i < drops.length; i++) {

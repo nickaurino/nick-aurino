@@ -5,23 +5,52 @@ export type Project = {
   tags: string[]
   badge?: string
   link?: { label: string; href: string }
+  /** Extra links (e.g. paper + DOI) surfaced in the project modal. */
+  links?: { label: string; href: string }[]
   year: string
   featured?: boolean
   status?: "active" | "completed"
 }
 
 export const PROJECTS: Project[] = [
-  // Featured always first
+  // Current work — featured first
+  {
+    title: "Dabble",
+    tagline: "A hobby discovery app that helps you explore new interests, spin for ideas, and track what you're trying.",
+    description:
+      "Dabble is my main current project, a warm and personal app for people who want to explore new hobbies. It helps you discover interests, spin for fresh ideas when you're not sure what to try, and organize everything by status like \"Want to Try,\" \"Trying It,\" and \"Done It.\" I built it because endless scrolling has made it too easy to avoid ever being bored, and I think boredom actually matters. It's where curiosity starts and where real hobbies come from. Dabble is meant to nudge you off the feed and into trying something for yourself. Built with React Native and Expo on Firebase.",
+    tags: ["React Native", "Expo", "Firebase", "TypeScript", "iOS"],
+    // App Store status — update the badge/link below once it's live or in review.
+    badge: "iOS · App Store soon",
+    link: { label: "App Store (coming soon)", href: "#" },
+    year: "2026",
+    featured: true,
+    status: "active",
+  },
   {
     title: "M4Health",
     tagline: "The first large-scale benchmark for AI-generated health misinformation in short-form video.",
     description:
-      "Co-authored and built the data pipeline for M4Health, a 500K+-video benchmark spanning TikTok, YouTube Shorts, and Reddit across nutrition, fitness, mental health, and wellness. Designed to stress-test large vision-language models on credibility assessment, AI-generation detection, and theme classification. Ongoing research funded by LMU Undergraduate Research Stipend.",
+      "Co-authored and built the data pipeline for M4Health, a 500K+-video benchmark spanning TikTok, YouTube Shorts, and Reddit across nutrition, fitness, mental health, and wellness. It's designed to stress-test large vision-language models on credibility assessment, AI-generation detection, and theme classification. The paper was published in the MisD workshop at ICWSM 2026, and the project won the Hannon Library Grand Prize for Undergraduate Research at LMU.",
     tags: ["Python", "Data Pipelines", "Vision-Language Models", "Research", "NLP"],
-    badge: "Accepted · MisD @ ICWSM 2026",
-    link: { label: "Paper (coming soon)", href: "#" },
+    badge: "Published · MisD @ ICWSM 2026",
+    link: { label: "Read the paper", href: "https://workshop-proceedings.icwsm.org/abstract.php?id=2026_43" },
+    links: [
+      { label: "Read the paper", href: "https://workshop-proceedings.icwsm.org/abstract.php?id=2026_43" },
+      { label: "DOI", href: "https://doi.org/10.36190/2026.43" },
+    ],
     year: "2025",
     featured: true,
+    status: "completed",
+  },
+  {
+    title: "Cadence",
+    tagline: "An iOS app that detects your walking or running cadence in real time and matches music to your movement.",
+    description:
+      "A fitness music app concept for iOS that reads your real-time walking or running cadence and helps line up music to the pace of your stride. The idea: the right song at the right tempo, automatically, so your playlist moves with you instead of against you. Built natively for iOS with React Native and Expo.",
+    tags: ["React Native", "Expo", "iOS", "Apple Music"],
+    badge: "Current · iOS",
+    year: "2026",
     status: "active",
   },
 
@@ -30,11 +59,11 @@ export const PROJECTS: Project[] = [
     title: "CodeFades",
     tagline: "A real-time 1v1 competitive coding platform where two players race to solve the same problem.",
     description:
-      "Leading frontend and backend development on CodeFades, a competitive programming platform where players queue, get matched by Elo rating, and race to solve the same coding challenge in real time. Features a live in-browser code editor, Docker-sandboxed code execution, WebSocket-powered match sync, and a curriculum page. Built with Next.js, WebSockets, and Docker as a 3-person senior capstone.",
+      "Led frontend and backend development on CodeFades, a competitive programming platform where players queue, get matched by Elo rating, and race to solve the same coding challenge in real time. Features a live in-browser code editor, Docker-sandboxed code execution, WebSocket-powered match sync, and a curriculum page. Built with Next.js, WebSockets, and Docker as a 3-person senior capstone.",
     tags: ["Next.js", "WebSockets", "Docker", "Full-Stack", "Real-Time"],
     badge: "Senior Capstone II",
     year: "2026",
-    status: "active",
+    status: "completed",
   },
   {
     title: "NeuroConnect",

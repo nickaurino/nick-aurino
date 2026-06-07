@@ -10,7 +10,7 @@ import Terminal from "@/components/about/Terminal"
 export const metadata = {
   title: "About | Nick Aurino",
   description:
-    "CS student at LMU graduating May 2026, building at the intersection of technology and real-world impact.",
+    "Computer science graduate from Loyola Marymount University, building personal software projects inspired by things I wish existed.",
 }
 
 export default function AboutPage() {
@@ -27,14 +27,14 @@ export default function AboutPage() {
           <span className="relative flex h-2 w-2">
             <span
               className="absolute inline-flex h-full w-full animate-ping rounded-full opacity-75"
-              style={{ backgroundColor: "var(--color-accent)" }}
+              style={{ backgroundColor: "var(--color-live)" }}
             />
             <span
               className="relative inline-flex h-2 w-2 rounded-full"
-              style={{ backgroundColor: "var(--color-accent)" }}
+              style={{ backgroundColor: "var(--color-live)" }}
             />
           </span>
-          Graduating May 2026 · Open to roles
+          Computer Science Graduate · Open to roles
         </span>
       </div>
 
@@ -89,7 +89,7 @@ export default function AboutPage() {
             href="/resume.pdf"
             download
             className="inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm font-medium transition-opacity hover:opacity-80"
-            style={{ backgroundColor: "var(--color-accent)", color: "#09090b" }}
+            style={{ backgroundColor: "var(--color-accent)", color: "var(--color-background)" }}
           >
             <Download size={16} />
             Resume.pdf

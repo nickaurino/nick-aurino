@@ -19,7 +19,7 @@ const NEOFETCH = `
   .ssssssssdMMMNhsssssssssshNMMMdssssssss.   Languages: Python Java JS TS C
   +sssshhhyNMMNyssssssssssssyNMMMysssssss+   Editor: VS Code (vim mode off)
   ossyNMMMNyMMhsssssssssssssshmmmhssssss/    GPA: 3.73 / 4.0
-  ossyNMMMNyMMhsssssssssssssshmmmhssssss/    Research: M4Health · Skywalker · Hearing Aid
+  ossyNMMMNyMMhsssssssssssssshmmmhssssss/    Building: Dabble · Cadence
   +sssshhhyNMMNyssssssssssssyNMMMysssssss+   Status: open to roles
   .ssssssssdMMMNhsssssssssshNMMMdssssssss.
    /sssssssshNMMMyhhyyyyhmNMMMNhssssssss/
@@ -50,7 +50,7 @@ function runCommand(input: string): string[] {
       ]
 
     case "whoami":
-      return ["nick aurino — cs student, builder, researcher", "graduating LMU May 2026"]
+      return ["nick aurino — cs grad, builder, hobbyist", "LMU '26 · building things i wish existed"]
 
     case "ls":
       return ["about/    projects/    resume/    contact/"]
@@ -162,7 +162,7 @@ export default function Terminal() {
         </div>
 
         {/* Terminal body */}
-        <div ref={bodyRef} className="bg-[#0d0d0f] p-4 font-mono text-sm min-h-[260px] max-h-[420px] overflow-y-auto cursor-text">
+        <div ref={bodyRef} className="bg-[#120a04] p-4 font-mono text-sm min-h-[260px] max-h-[420px] overflow-y-auto cursor-text">
           {lines.map((line, i) => (
             <div key={i} className="whitespace-pre-wrap leading-relaxed">
               {line.type === "input" ? (

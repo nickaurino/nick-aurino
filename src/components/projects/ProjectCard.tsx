@@ -2,17 +2,38 @@ import { ArrowUpRight } from "lucide-react"
 import { cn } from "@/lib/utils"
 import type { Project } from "@/lib/projects"
 
-export function ProjectCard({ project }: { project: Project }) {
+export function ProjectCard({
+  project,
+  onClick,
+}: {
+  project: Project
+  onClick?: () => void
+}) {
   const { title, tagline, description, tags, badge, link, year, status } = project
 
   return (
     <div
+      role={onClick ? "button" : undefined}
+      tabIndex={onClick ? 0 : undefined}
+      onClick={onClick}
+      onKeyDown={
+        onClick
+          ? (e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault()
+                onClick()
+              }
+            }
+          : undefined
+      }
+      aria-label={onClick ? `View details for ${title}` : undefined}
       className={cn(
         "group relative flex flex-col rounded-xl border p-6",
         "border-[var(--color-border)] bg-[var(--color-surface)]",
         "transition-all duration-300",
         "hover:border-[var(--color-accent)]",
-        "hover:shadow-[0_0_24px_0_color-mix(in_srgb,var(--color-accent)_15%,transparent)]"
+        "hover:shadow-[0_0_24px_0_color-mix(in_srgb,var(--color-accent)_15%,transparent)]",
+        onClick && "cursor-pointer"
       )}
     >
       {/* Top row: title + badge */}
@@ -20,8 +41,8 @@ export function ProjectCard({ project }: { project: Project }) {
         <div className="flex items-center gap-2">
           {status === "active" && (
             <span className="relative flex h-2 w-2 shrink-0">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full opacity-75" style={{ backgroundColor: "var(--color-accent)" }} />
-              <span className="relative inline-flex h-2 w-2 rounded-full" style={{ backgroundColor: "var(--color-accent)" }} />
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full opacity-75" style={{ backgroundColor: "var(--color-live)" }} />
+              <span className="relative inline-flex h-2 w-2 rounded-full" style={{ backgroundColor: "var(--color-live)" }} />
             </span>
           )}
           <h3 className="text-lg font-semibold text-[var(--color-text)]">{title}</h3>
@@ -66,7 +87,8 @@ export function ProjectCard({ project }: { project: Project }) {
         {link ? (
           <a
             href={link.href}
-            className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--color-accent)] transition-opacity hover:opacity-75"
+            onClick={(e) => e.stopPropagation()}
+            className="relative z-10 inline-flex items-center gap-1.5 text-sm font-medium text-[var(--color-accent)] transition-opacity hover:opacity-75"
             target={link.href !== "#" ? "_blank" : undefined}
             rel="noopener noreferrer"
           >

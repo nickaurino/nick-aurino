@@ -2,14 +2,14 @@ export const EXPERIENCE = [
   {
     company: "Google Code Next",
     role: "Machine Learning Instructional Intern",
-    period: "Apr 2026 – Present",
+    period: "Apr 2026 – May 2026",
     location: "Inglewood, CA",
     description:
-      "Mentoring 20+ student engineers in hands-on ML coding sessions covering JavaScript, Three.js, MediaPipe, and XR technologies, while building an interactive 3D feature to demonstrate core concepts for small-group instruction.",
+      "Mentored 20+ student engineers in hands-on ML coding sessions covering JavaScript, Three.js, MediaPipe, and XR technologies, and built an interactive 3D feature to demonstrate core concepts for small-group instruction.",
     bullets: [
       "Mentored 20+ student engineers in hands-on coding sessions, supporting debugging, environment setup, and problem-solving skills.",
       "Guided students through hands-on projects using JavaScript, Three.js, MediaPipe, and XR technologies, providing real-time support on debugging and implementation concepts.",
-      "Building an interactive feature using real-time input and 3D rendering to demonstrate core concepts for small-group student instruction.",
+      "Built an interactive feature using real-time input and 3D rendering to demonstrate core concepts for small-group student instruction.",
     ],
   },
   {
@@ -41,28 +41,24 @@ export const EXPERIENCE = [
 
 export const STACK = [
   {
-    category: "Proficient",
-    skills: ["Python", "Java", "JavaScript", "TypeScript", "C", "SQL"],
+    category: "Languages",
+    skills: ["Python", "JavaScript / TypeScript", "Java", "C / C++", "HTML / CSS"],
   },
   {
-    category: "Familiar",
-    skills: ["C++", "Rust", "Go", "Swift", "Kotlin", "Haskell"],
+    category: "Frameworks & Libraries",
+    skills: ["React", "React Native", "Expo", "Node.js", "Three.js", "MediaPipe Hands"],
   },
   {
-    category: "Tools & Frameworks",
-    skills: ["Git", "Firebase", "Supabase", "Pandas", "NumPy", "R", "Tableau", "MATLAB", "Jupyter"],
-  },
-  {
-    category: "Concepts",
-    skills: ["Machine Learning", "Data Pipelines", "REST APIs", "Agile Development", "Systems Design"],
+    category: "Tools & Platforms",
+    skills: ["Firebase", "Git / GitHub"],
   },
 ]
 
 export const STATS = [
-  { value: 500, suffix: "K+", label: "health videos collected" },
+  { value: 660, suffix: "K+", label: "health videos collected" },
   { value: 157, suffix: "K", label: "benchmark corpus" },
   { value: 3, suffix: "K", label: "expert-annotated samples" },
-  { value: 7, suffix: "", label: "projects shipped" },
+  { value: 8, suffix: "", label: "projects shipped" },
 ]
 
 export const CERTS = [
@@ -106,6 +102,6 @@ export const HONORS = [
   {
     title: "LMU Undergraduate Research Stipend",
     description:
-      "Awarded funding for three independent research projects: M4Health (ongoing), Project Skywalker (CubeSat avionics), and Hearing Aid & Sound Classification Research.",
+      "Awarded funding for three independent research projects: M4Health (health-misinformation benchmark), Project Skywalker (CubeSat avionics), and Hearing Aid & Sound Classification Research.",
   },
 ]

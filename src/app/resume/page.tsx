@@ -5,7 +5,7 @@ import { SITE } from "@/lib/constants"
 
 export const metadata = {
   title: "Resume | Nick Aurino",
-  description: "Resume of Nick Aurino, CS student at LMU graduating May 2026.",
+  description: "Resume of Nick Aurino, computer science graduate from Loyola Marymount University.",
 }
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
@@ -38,7 +38,7 @@ export default function ResumePage() {
           <h1 className="text-4xl font-bold tracking-tight text-[var(--color-text)]">
             Nick Aurino
           </h1>
-          <p className="mt-1 text-lg text-[var(--color-muted)]">Computer Science Student</p>
+          <p className="mt-1 text-lg text-[var(--color-muted)]">Computer Science Graduate</p>
           <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2">
             <a
               href={`mailto:${SITE.email}`}
@@ -75,7 +75,7 @@ export default function ResumePage() {
           href="/resume.pdf"
           download
           className="print:hidden inline-flex shrink-0 items-center gap-2 rounded-lg px-5 py-2.5 text-sm font-medium transition-opacity hover:opacity-80"
-          style={{ backgroundColor: "var(--color-accent)", color: "#09090b" }}
+          style={{ backgroundColor: "var(--color-accent)", color: "var(--color-background)" }}
         >
           <Download size={14} />
           Download PDF
@@ -170,18 +170,18 @@ export default function ResumePage() {
                 key={title}
                 className="flex items-start justify-between gap-4 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] px-5 py-4"
               >
-                <div className="flex items-center gap-2">
-                  {status === "active" && (
-                    <span
-                      className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full"
-                      style={{ backgroundColor: "var(--color-accent)" }}
-                    />
-                  )}
-                  <div>
+                <div>
+                  <div className="flex items-center gap-2">
+                    {status === "active" && (
+                      <span
+                        className="h-1.5 w-1.5 shrink-0 rounded-full"
+                        style={{ backgroundColor: "var(--color-live)" }}
+                      />
+                    )}
                     <span className="font-medium text-[var(--color-text)]">{title}</span>
                     {badge && (
                       <span
-                        className="ml-2 rounded-full px-2 py-0.5 text-xs"
+                        className="rounded-full px-2 py-0.5 text-xs"
                         style={{
                           backgroundColor: "color-mix(in srgb, var(--color-accent) 12%, transparent)",
                           color: "var(--color-accent)",
@@ -190,8 +190,8 @@ export default function ResumePage() {
                         {badge}
                       </span>
                     )}
-                    <p className="mt-0.5 text-sm text-[var(--color-muted)]">{tagline}</p>
                   </div>
+                  <p className="mt-0.5 text-sm text-[var(--color-muted)]">{tagline}</p>
                 </div>
                 <span className="shrink-0 font-mono text-xs text-[var(--color-muted)]">{year}</span>
               </div>

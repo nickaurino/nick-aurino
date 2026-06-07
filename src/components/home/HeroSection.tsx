@@ -13,7 +13,7 @@ const ITEMS = [
   { text: "an AI developer",     pause: 2400  },
   { text: "a builder",           pause: 2400  },
   { text: "a problem solver",    pause: 2400  },
-  { text: "a cs student",        pause: 2400  },
+  { text: "a CS graduate",       pause: 2400  },
 ];
 
 export function HeroSection() {
@@ -68,17 +68,6 @@ export function HeroSection() {
 
   return (
     <section className="relative flex min-h-[calc(100svh-65px)] flex-col justify-center overflow-hidden px-6 py-16">
-      {/* Dot grid */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px)",
-          backgroundSize: "28px 28px",
-        }}
-      />
-
       {/* Primary orb — top right, mouse-tracked */}
       <div
         ref={primaryOrbRef}
@@ -90,7 +79,7 @@ export function HeroSection() {
           className="animate-pulse-glow h-[700px] w-[700px] rounded-full"
           style={{
             background:
-              "radial-gradient(circle, color-mix(in srgb, var(--color-accent) 28%, transparent) 0%, transparent 70%)",
+              "radial-gradient(circle, color-mix(in srgb, var(--color-glow) 60%, transparent) 0%, transparent 70%)",
             filter: "blur(45px)",
           }}
         />
@@ -107,7 +96,7 @@ export function HeroSection() {
           className="h-[580px] w-[580px] rounded-full"
           style={{
             background:
-              "radial-gradient(circle, color-mix(in srgb, var(--color-accent) 16%, transparent) 0%, transparent 70%)",
+              "radial-gradient(circle, color-mix(in srgb, var(--color-glow) 40%, transparent) 0%, transparent 70%)",
             filter: "blur(50px)",
             animation: "pulse-glow 9s ease-in-out infinite reverse",
           }}
@@ -127,7 +116,7 @@ export function HeroSection() {
             className="glitch-hover inline-block"
             style={{
               background:
-                "linear-gradient(120deg, var(--color-text) 30%, var(--color-accent) 70%, #67e8f9)",
+                "linear-gradient(120deg, var(--color-text) 30%, var(--color-accent) 70%, #efe7d8)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               backgroundClip: "text",

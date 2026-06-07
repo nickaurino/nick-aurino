@@ -11,13 +11,13 @@ export default function ConsoleMessage() {
  | |\\  | | (__|   <
  |_| \\_|_|\\___|_|\\_\\
 `
-    const accent = "color:#34d399;font-weight:bold;"
-    const muted  = "color:#a1a1aa;"
+    const accent = "color:#c8b89a;font-weight:bold;"
+    const muted  = "color:#8a7060;"
     const reset  = "color:inherit;"
 
     console.log("%c" + ascii, accent)
     console.log(
-      "%cHey, you found the console. 👋\n\n%cI'm Nick — CS @ LMU, building cool stuff.\nOpen to SWE roles starting Summer 2026.\n\n%c→ nickaurino@gmail.com\n→ github.com/nickaurino\n→ linkedin.com/in/nick-aurino",
+      "%cHey, you found the console. 👋\n\n%cI'm Nick — CS grad from LMU, building things I wish existed.\nOpen to SWE roles.\n\n%c→ nickaurino@gmail.com\n→ github.com/nickaurino\n→ linkedin.com/in/nick-aurino",
       accent,
       muted,
       accent

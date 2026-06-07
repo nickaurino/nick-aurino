@@ -3,7 +3,7 @@ const ROLES = [
   { label: "Brawl Stars Club at LMU", note: "Founder & President" },
 ]
 
-const INTERESTS = ["Gaming", "Bouldering", "Weightlifting", "Roundnet"]
+const INTERESTS = ["Trying New Hobbies", "Gaming", "Bouldering", "Weightlifting", "Roundnet"]
 
 export function BeyondCode() {
   return (
@@ -14,9 +14,11 @@ export function BeyondCode() {
       </h2>
       <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6">
         <p className="mb-6 text-sm leading-relaxed text-[var(--color-muted)]">
-          Outside of code, I served as Secretary of Phi Delta Theta and founded the Brawl Stars Club
-          at LMU, officially recognized as an RSO in 2025. I spend my free time bouldering, staying
-          competitive in games, and staying active.
+          I&apos;m a bit of a hobby enthusiast who loves picking up new interests, trying things
+          I&apos;ve never done, and building little tools around whatever I&apos;m curious about
+          (Dabble started exactly that way). Outside of code, I served as Secretary of Phi Delta Theta and founded the
+          Brawl Stars Club at LMU, officially recognized as an RSO in 2025. The rest of my free time
+          goes to bouldering, staying competitive in games, and staying active.
         </p>
         <div className="space-y-4">
           <div>

@@ -31,7 +31,7 @@ export const PROJECTS: Project[] = [
     title: "M4Health",
     tagline: "The first large-scale benchmark for AI-generated health misinformation in short-form video.",
     description:
-      "Co-authored and built the data pipeline for M4Health, a 500K+-video benchmark spanning TikTok, YouTube Shorts, and Reddit across nutrition, fitness, mental health, and wellness. It's designed to stress-test large vision-language models on credibility assessment, AI-generation detection, and theme classification. The paper was published in the MisD workshop at ICWSM 2026, and the project won the Hannon Library Grand Prize for Undergraduate Research at LMU.",
+      "Co-authored and built the data pipeline for M4Health, a 660K+-video benchmark spanning TikTok, YouTube Shorts, and Reddit across nutrition, fitness, mental health, and wellness. It's designed to stress-test large vision-language models on credibility assessment, AI-generation detection, and theme classification. The paper was published in the MisD workshop at ICWSM 2026, and the project won the Hannon Library Grand Prize for Undergraduate Research at LMU.",
     tags: ["Python", "Data Pipelines", "Vision-Language Models", "Research", "NLP"],
     badge: "Published · MisD @ ICWSM 2026",
     link: { label: "Read the paper", href: "https://workshop-proceedings.icwsm.org/abstract.php?id=2026_43" },

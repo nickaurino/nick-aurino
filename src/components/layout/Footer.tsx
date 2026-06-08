@@ -6,9 +6,17 @@ export function Footer() {
   return (
     <footer className="border-t border-[var(--color-border)] mt-24">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-8">
-        <p className="text-sm text-[var(--color-muted)]">
-          © {new Date().getFullYear()} {SITE.name}
-        </p>
+        <div className="flex items-center gap-4">
+          <p className="text-sm text-[var(--color-muted)]">
+            © {new Date().getFullYear()} {SITE.name}
+          </p>
+          <Link
+            href="/credits"
+            className="text-sm text-[var(--color-muted)] transition-colors hover:text-[var(--color-accent)]"
+          >
+            Credits
+          </Link>
+        </div>
 
         <div className="flex items-center gap-4">
           <Link

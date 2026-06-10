@@ -18,11 +18,10 @@ export const PROJECTS: Project[] = [
     title: "Dabble",
     tagline: "A hobby discovery app that helps you explore new interests, spin for ideas, and track what you're trying.",
     description:
-      "Dabble is my main current project, a warm and personal app for people who want to explore new hobbies. It helps you discover interests, spin for fresh ideas when you're not sure what to try, and organize everything by status like \"Want to Try,\" \"Trying It,\" and \"Done It.\" I built it because endless scrolling has made it too easy to avoid ever being bored, and I think boredom actually matters. It's where curiosity starts and where real hobbies come from. Dabble is meant to nudge you off the feed and into trying something for yourself. Built with React Native and Expo on Firebase.",
-    tags: ["React Native", "Expo", "Firebase", "TypeScript", "iOS"],
-    // App Store status — update the badge/link below once it's live or in review.
-    badge: "iOS · App Store soon",
-    link: { label: "App Store (coming soon)", href: "#" },
+      "Dabble is my main current project, a warm and personal app for people who want to explore new hobbies. It helps you discover interests, spin for fresh ideas when you're not sure what to try, and organize everything by status like \"Want to Try,\" \"Trying It,\" and \"Done It.\" I built it because endless scrolling has made it too easy to avoid ever being bored, and I think boredom actually matters. It's where curiosity starts and where real hobbies come from. Dabble is meant to nudge you off the feed and into trying something for yourself. Built with React Native and Expo, with an offline-first local data layer.",
+    tags: ["React Native", "Expo", "TypeScript", "iOS", "AsyncStorage"],
+    badge: "Live on the App Store",
+    link: { label: "View on the App Store", href: "https://apps.apple.com/us/app/dabble-hobby-finder/id6777279546" },
     year: "2026",
     featured: true,
     status: "active",

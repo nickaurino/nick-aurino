@@ -27,6 +27,18 @@ export const PROJECTS: Project[] = [
     status: "active",
   },
   {
+    title: "Cadence",
+    tagline: "An iOS app that detects your walking or running cadence in real time and matches Apple Music to your stride.",
+    description:
+      "Cadence reads your real-time walking or running cadence from the iPhone's motion sensors and queues Apple Music songs whose tempo matches your stride, adapting live as you speed up or slow down. The hard part is tempo: Apple's catalog exposes no BPM, so the app analyzes each song's 30-second preview on-device with spectral-flux onset detection and autocorrelation, no third-party API. Under the hood is a custom Swift MusicKit module (via the Expo Modules API) for authorization, search, and playback, plus a cadence engine with half and double-time matching and sensor guard rails. Built with React Native, Expo, and Swift, and shipped to the App Store as v1.0.",
+    tags: ["React Native", "Expo", "Swift", "iOS", "Apple Music"],
+    badge: "Live on the App Store",
+    link: { label: "View on the App Store", href: "https://apps.apple.com/app/cadence-music-at-your-pace/id6779089068" },
+    year: "2026",
+    featured: true,
+    status: "active",
+  },
+  {
     title: "M4Health",
     tagline: "The first large-scale benchmark for AI-generated health misinformation in short-form video.",
     description:
@@ -42,17 +54,6 @@ export const PROJECTS: Project[] = [
     featured: true,
     status: "completed",
   },
-  {
-    title: "Cadence",
-    tagline: "An iOS app that detects your walking or running cadence in real time and matches music to your movement.",
-    description:
-      "A fitness music app concept for iOS that reads your real-time walking or running cadence and helps line up music to the pace of your stride. The idea: the right song at the right tempo, automatically, so your playlist moves with you instead of against you. Built natively for iOS with React Native and Expo.",
-    tags: ["React Native", "Expo", "iOS", "Apple Music"],
-    badge: "Current · iOS",
-    year: "2026",
-    status: "active",
-  },
-
   // Sorted by year descending
   {
     title: "CodeFades",
